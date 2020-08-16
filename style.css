@@ -140,31 +140,6 @@
     border: 3px solid #037fff;
 }
 
-.menu ul li .bar{
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: white;
-}
-.menu ul li .bar span{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation-name: menubar;
-    animation-delay: 0.5s;
-    transition: 0.5s;
-}
-@keyframes menubar{
-    from{
-        transform: translateX(0)
-    }
-    to{
-        transform: translateX(100%);
-    }
-}
-
-
 
 
 
