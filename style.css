@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.body {
+    background: #071828;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.header {
+    height: 100%;
+    width: 300px;
+    float: left;
+    overflow: hidden;
+    background: #191d2b;
+}
+
+.logo {
+    width: 100%;
+    border-bottom: 1px solid #2f3542;
+
+}
+
+.header .img {
+    padding: 60px;
+    width: 140px;
+    margin: auto;
+}
+
+.header .logo img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    border: 10px solid white;
+    border-radius: 50%;
+
+}
+
+.menu {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.menu ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #1e272e;
+    transition: 0.7s;
+}
+
+.menu ul li:hover {
+    background: rgba(9, 132, 227, 0.3);
+}
+.menu ul li:nth-child(1) {
+    background: rgba(9, 132, 227, 1.0);
+}
+.menu ul li:nth-child(1):hover a{
+    color:white;
+}
+.menu ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #9ea6bd;
+    transition: 0.7s;
+    font-weight: 600;
+}
+
+.menu ul li:hover a{
+     color: rgba(9, 132, 227, 1.0);
+}
+
+.footer {
+    border-top: 1px solid #2f3542;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 170px;
+    color: rgba(223, 230, 233, 0.6);
+    font-size: 13px;
+}
+
+.footer span{
+    font-weight: 600;
+    transition: 1.5s;
+}
+
+
+.footer span:hover {
+    color: rgba(9, 132, 227, 1.5);
+}
+.homepage {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.homepage .font-word{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family:monospace
+}
+.homepage .font-word span{
+    color:#fb3b64;
+}
+.homepage p{
+    color: #a4acc4;
+    font-family:
+}
+.homepage .social-icons{
+    margin-top: 50px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: #9ea6bd;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: 3px solid #2e344e;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    position: relative;
+    left: 30%;
+    margin: 10px;
+    transition: 1s;
+}
+.social-icons a:hover{
+    color: #037fff;
+    border: 3px solid #037fff;
+}
+
+.menu ul li .bar{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+.menu ul li .bar span{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: menubar;
+    animation-delay: 0.5s;
+    transition: 0.5s;
+}
+@keyframes menubar{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
