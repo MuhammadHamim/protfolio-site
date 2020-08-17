@@ -61,8 +61,8 @@
     font-weight: 600;
     z-index: 1;
 }
-.menu a:visited{
-    background: rgba(9, 132, 227, 1.0);
+.menu a:hover{
+    color: rgba(9, 132, 227, 1.5);
 }
 .menu a:hover::before{
     content: "";
@@ -150,11 +150,15 @@
     color: #037fff;
     border: 3px solid #037fff;
 }
-.about{
+
+/*home section end*/
+/*About section start form here*/
+
+.about,.resume,.contact{
     width: 72%;
     float: right;
 }
-.about h1{
+.about h1,.resume h1,.contact h1{
     color: white;
     text-transform: uppercase;
     margin-top: 150px;
@@ -192,16 +196,138 @@
     display: inline-block;
     margin-top: 100px;
 }
+.about-word p{
+    color: #a4acc4;
+    font-family:
+}
+.about-word-header{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family:monospace;
+}
+.about-word-header span{
+    color:#fb3b64;
+}
 
+/*about section end*/
+ 
+/*resume section start form here*/ 
 
+.skill-bar{
+    margin-top: 50px;
+    width: 500px;
+}
+.skill-bar li{
+    list-style: none;
+    margin: 30px;
+}
+.skill-bar li h3{
+    display: inline-block;
+    color: white;
+    margin-bottom: 10px;
+}
+.skill-bar li strong{
+    float: right;
+    margin-right: 78px;
+    color: whitesmoke;
+}
+.skill-bar li .skills{
+    height: 10px;
+    width: 400px;
+    background: rgba(9, 132, 227, 0.3);
+    display: block;
+    border-radius:10px;
+    margin-top: 15px;
+}
+.skill-bar li .skills .html{
+    height: 10px;
+    width: 90%;
+    background:rgba(9, 132, 227, 1.0);
+    float: left;
+    border-radius:10px;
+    animation-name: html;
+    animation-duration: 1s;
+    transition: .7s;
+}
+@keyframes html{
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+.skill-bar li .skills .css{
+    height: 10px;
+    width: 80%;
+    background:rgba(9, 132, 227, 1.0);
+    float: left;
+    animation-name: css;
+    animation-duration: 1s;
+    transition: .7s;
+}
+@keyframes css{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
 
-
-
-
-
-
-
-
+.skill-bar li .skills .java{
+    height: 10px;
+    width: 60%;
+    background:rgba(9, 132, 227, 1.0);
+    float: left;
+    animation-name: java;
+    animation-duration: 1s;
+    transition: .7s;
+}
+@keyframes java{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+.skill-bar li .skills .jquery{
+    height: 10px;
+    width: 75%;
+    background:rgba(9, 132, 227, 1.0);
+    float: left;
+    animation-name: jquery;
+    animation-duration: 1s;
+    transition: .7s;
+}
+@keyframes jquery{
+    from{
+        width: 0%;
+    }
+    to{
+        width:75%;
+    }
+}
+.skill-bar li .skills .wordpress{
+    height: 10px;
+    width: 85%;
+    background:rgba(9, 132, 227, 1.0);
+    float: left;
+    animation-name: wordpress;
+    animation-duration: 1s;
+    transition: .7s;
+}
+@keyframes wordpress{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 85%;
+    }
+}
 
 
 
