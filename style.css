@@ -61,9 +61,6 @@
     font-weight: 600;
     z-index: 1;
 }
-.menu a:hover{
-    color: rgba(9, 132, 227, 1.5);
-}
 .menu a:hover::before{
     content: "";
     position: absolute;
@@ -88,6 +85,7 @@
         width: 100%;
     }
 }
+
 .footer {
     border-top: 1px solid #2f3542;
     text-align: center;
@@ -151,8 +149,16 @@
     border: 3px solid #037fff;
 }
 
-/*home section end*/
-/*About section start form here*/
+/* 
+========================================== 
+Home section end
+========================================== 
+*/
+/* 
+========================================== 
+About section start from here
+========================================== 
+*/
 
 .about,.resume,.contact{
     width: 72%;
@@ -211,9 +217,17 @@
     color:#fb3b64;
 }
 
-/*about section end*/
+/* 
+========================================== 
+About section end 
+========================================== 
+*/
  
-/*resume section start form here*/ 
+/* 
+========================================== 
+Resume section start from here
+========================================== 
+*/
 
 .skill-bar{
     margin-top: 50px;
@@ -328,10 +342,95 @@
         width: 85%;
     }
 }
+/* 
+========================================== 
+resume end
+========================================== 
+*/
+/* 
+========================================== 
+Contact section start from here 
+========================================== 
+*/
 
-
-
-
+form{
+    margin-top: 50px;
+    overflow: hidden;
+}
+form h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+form input[type="text"],input[type="email"]{
+    height: 20px;
+    margin: 15px 0;
+    width:500px;
+    outline: none;
+    border: 1px solid #2e344e;
+    padding: 10px 10px;
+    display: block;
+    background: transparent;
+    color: #a4acc4;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+textarea{
+    height: 150px;
+    margin: 15px 0;
+    width: 500px;
+    outline: none;
+    border: 1px solid #2e344e;
+    padding: 10px 10px;
+    display: block;
+    background: transparent;
+    color: #a4acc4;
+}
+button{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    width: 130px;
+    height: 50px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    background: rgba(3,127,255,1);
+    color: white;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+button:hover::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    right: 100%;
+    width: 0;
+    float: left;
+    background: white;
+    visibility: visible;
+    transition: all .4s ease-out;
+    z-index: -1;
+    animation-name: submitanimation;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+@keyframes submitanimation{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+/* 
+========================================== 
+Contact section end
+========================================== 
+*/
 
 
 
