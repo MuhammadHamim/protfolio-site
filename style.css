@@ -48,39 +48,46 @@
     padding-bottom: 150px;
 }
 
-.menu ul {
-    list-style: none;
-    overflow: hidden;
-}
-
-.menu ul li {
+.menu a {
+    position: relative;
     text-align: center;
     padding: 15px 0;
+    display: block;
     border-bottom: 1px solid #1e272e;
-    transition: 0.7s;
-}
-
-.menu ul li:hover {
-    background: rgba(9, 132, 227, 0.3);
-}
-.menu ul li:nth-child(1) {
-    background: rgba(9, 132, 227, 1.0);
-}
-.menu ul li:nth-child(1):hover a{
-    color:white;
-}
-.menu ul li a {
     text-transform: uppercase;
     text-decoration: none;
     color: #9ea6bd;
     transition: 0.7s;
     font-weight: 600;
+    z-index: 1;
 }
-
-.menu ul li:hover a{
-     color: rgba(9, 132, 227, 1.0);
+.menu a:visited{
+    background: rgba(9, 132, 227, 1.0);
 }
-
+.menu a:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 100%;
+    width: 0;
+    background: rgba(3,127,255,.2);
+    visibility: visible;
+    transition: all .4s ease-out;
+    z-index: -1;
+    animation-name: menuanimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes menuanimation{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
 .footer {
     border-top: 1px solid #2f3542;
     text-align: center;
