@@ -377,12 +377,12 @@ form input[type="text"],input[type="email"]{
     display: block;
     background: transparent;
     color: #a4acc4;
-    text-transform: capitalize;
     font-weight: 600;
 }
 textarea{
     height: 150px;
     margin: 15px 0;
+    text-transform: capitalize;
     width: 500px;
     outline: none;
     border: 1px solid #2e344e;
