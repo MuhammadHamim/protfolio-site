@@ -278,6 +278,7 @@ Resume section start from here
     width: 80%;
     background:rgba(9, 132, 227, 1.0);
     float: left;
+    border-radius:10px;
     animation-name: css;
     animation-duration: 1s;
     transition: .7s;
@@ -294,6 +295,7 @@ Resume section start from here
 .skill-bar li .skills .java{
     height: 10px;
     width: 60%;
+    border-radius:10px;
     background:rgba(9, 132, 227, 1.0);
     float: left;
     animation-name: java;
@@ -313,6 +315,7 @@ Resume section start from here
     width: 75%;
     background:rgba(9, 132, 227, 1.0);
     float: left;
+    border-radius:10px;
     animation-name: jquery;
     animation-duration: 1s;
     transition: .7s;
@@ -328,6 +331,7 @@ Resume section start from here
 .skill-bar li .skills .wordpress{
     height: 10px;
     width: 85%;
+    border-radius:10px;
     background:rgba(9, 132, 227, 1.0);
     float: left;
     animation-name: wordpress;
@@ -373,13 +377,13 @@ form input[type="text"],input[type="email"]{
     display: block;
     background: transparent;
     color: #a4acc4;
+    text-transform: capitalize;
     font-weight: 600;
 }
 textarea{
     height: 150px;
     margin: 15px 0;
     width: 500px;
-    text-transform: capitalize;
     outline: none;
     border: 1px solid #2e344e;
     padding: 10px 10px;
